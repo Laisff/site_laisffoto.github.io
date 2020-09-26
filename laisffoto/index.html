@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta name="author" content="@laisff">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@laisffoto</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--Baixa fonte-->
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">LAÍS FURLAN FOTOGRAFIA</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#contact">CONTATO</a></li>
+      </ul>
+    </nav>
+  </header>
+	
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+	  <table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td colspan= "2" align="center"><img src="images/IMG_1565-46.jpg" width="95%"/></td>
+      <td colspan= "2" align="center"><img src="images/IMG_2670-1.jpg" width="95%"/></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/IMG_4403.jpg" width="90%"/></td>
+      <td align="center"><img src="images/IMG_2524-73.jpg" width="90%"/></td>
+      <td align="center"><img src="images/IMG_3193-1.jpg" width="90%"/></td>
+	    <td align="center"><img src="images/IMG_3198.jpg" width="90%"/></td>
+    </tr>
+  </tbody>
+</table>
+  </section>
+
+  <section class="sobre" id="sobre">
+	  <table width="100%" border="0" align="center">
+  <tbody>
+    <tr >
+      <td> <img src="images/teste.jpeg" width="160%"/> 	  
+        <span id="theme-toggle" class="theme-toggle"></span>
+       	  <script>
+            function toggleTheme() {
+                const htmlTag = document.getElementsByTagName('html')[0]
+                if (htmlTag.hasAttribute('data-theme')) {
+                htmlTag.removeAttribute('data-theme')
+                return
+                }
+
+                htmlTag.setAttribute('data-theme', 'dark')
+            }
+            document
+            .getElementById('theme-toggle')
+            .addEventListener('click', toggleTheme)
+        </script></td>
+      <td><h2 class="formatacao_titulo">Quem sou eu?</h2>
+    <p class="formatacao_texto">Oii, tudo bem? Me chamo Laís, tenho 20 anos, atualmente curso Análise e Desenvolvimento de Sistemas e sou apaixonado por fotografia! Entre os ano de 2015 e 2016 fui ajudante da minha tia que estava trabalhando como fotógrafa. No ano de 2017 começei fotografando de tudo um pouco e hoje em dia tenho focado mais em ensaios individuais, gestantes e familía.</p>
+	</td>
+    </tr>
+  </tbody>
+</table> 
+  </section>
+	
+<section class="contact" id="contact">
+  <h2 class="formatacao_titulo_contato">PARA MAIS INFORMAÇÕES E SOLICITAÇÕES DE ORÇAMENTO ENTRE EM CONTATO</h2>
+  <p>
+    <label class="formatacao_texto_contato" for="textfield">Nome:</label>
+    <input type="text" name="textfield" id="textfield">
+  </p>
+  <p>
+    <label class="formatacao_texto_contato" for="email">Email:</label> 
+    <input type="email" name="email" id="email">
+        <script>
+        function envia(){
+          var email = document.getElementById('email').value
+              if(email == '') throw 'Informe um email por favor';
+          
+              alert("Seu email foi enviado com sucesso! Em breve entraremos em contato pelo email digitado: " + email);
+      }</script>
+  </p>
+  <p>
+    <label class="formatacao_texto_contato" for="textarea">Mensagem:</label>
+    <textarea name="textarea" id="textarea" ></textarea>
+  </p>
+    
+   <div class="button_enviar" align="center" onclick="envia()">ENVIAR</div>
+ </section>
+	
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2020- <strong>Laís Furlan</strong></div>
+</div>
+
+</body>
+</html>
